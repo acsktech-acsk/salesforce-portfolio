@@ -11,7 +11,6 @@
 | TC-07 | Review duplicate or repeat submissions | Tasks are created only according to the intended process | Not tested |
 
 ## Evidence
-- evidence/follow-up-task-created.png shows the follow-up Task on a Lead record.
-- evidence/flow-active.png shows the Flow active in Flow Builder.
+Screenshots should be added to this repository after uploading the two Salesforce screenshots. The current pass status is based on the checks confirmed during setup.
 
 **Testing note:** Only TC-02 and TC-03 are marked passed based on the checks confirmed so far. Do not describe the entire test suite as passed until the remaining cases are re-tested and documented.
