@@ -19,10 +19,8 @@ A record-triggered Flow creates a follow-up Task when a Lead record is created. 
 - **Status / priority:** Not Started / Normal
 - **Due date:** Next day
 
-## Verified evidence
-The following screenshots are stored in the evidence folder:
-- follow-up-task-created.png — Lead record showing the automatically created follow-up Task.
-- flow-active.png — Flow Builder showing the record-triggered Flow and active status.
+## Evidence
+The task-creation result and active Flow were reviewed during setup. Screenshot files still need to be committed to this repository before they can be displayed here.
 
 ## Scope and test status
 The task creation behavior and active Flow status were checked in the Developer Org. Lead conversion and opportunity records were used during setup, but the full conversion scenarios should be re-tested before presenting them as formal acceptance tests. See [test scenarios](./test-scenarios.md).
