@@ -1,50 +1,36 @@
 # Demo 01: Sales Pipeline Automation
 
 **Built by:** ACSKTech  
-**Platform:** Salesforce Sales Cloud  
-**Project Type:** Portfolio Demonstration using fictional data
+**Platform:** Salesforce Sales Cloud (Salesforce Developer Org)  
+**Project type:** Independent portfolio demonstration using fictional data  
+**Status:** Core follow-up automation verified
 
-## Business Problem
-
-Sales teams need a consistent process to capture leads, convert qualified prospects into accounts and contacts, and follow up with potential customers.
+## Business problem
+Sales teams need a consistent process to capture leads and ensure each new lead receives timely follow-up.
 
 ## Solution
+A record-triggered Flow creates a follow-up Task when a Lead record is created. The wider demonstration also includes Salesforce standard lead, account, contact, and opportunity records.
 
-This demonstration uses Salesforce standard sales objects and Flow automation to support the sales process.
+## Implemented automation
+- **Flow:** New Lead Follow-Up Task
+- **Trigger:** Lead record is created
+- **Action:** Create a Task related to the triggering Lead
+- **Task subject:** Follow up with new lead
+- **Status / priority:** Not Started / Normal
+- **Due date:** Next day
 
-### Features Demonstrated
+## Verified evidence
+The following screenshots are stored in the evidence folder:
+- follow-up-task-created.png — Lead record showing the automatically created follow-up Task.
+- flow-active.png — Flow Builder showing the record-triggered Flow and active status.
 
-- Lead creation and management
-- Lead conversion into account and contact records
-- Opportunity creation and pipeline tracking
-- Record-triggered Flow to create a follow-up task when a lead is created
-- Functional testing using fictional records
+## Scope and test status
+The task creation behavior and active Flow status were checked in the Developer Org. Lead conversion and opportunity records were used during setup, but the full conversion scenarios should be re-tested before presenting them as formal acceptance tests. See [test scenarios](./test-scenarios.md).
 
-## Automation
-
-**Flow Name:** New Lead Follow-Up Task
-
-**Trigger:** When a Lead record is created.
-
-**Action:** Automatically create a follow-up Task related to the new Lead.
-
-## Test Result
-
-- Created a new test lead.
-- Verified that the follow-up task was created successfully.
-- Confirmed that the Flow is active.
-
-## Tools and Skills
-
-- Salesforce Lightning Experience
-- Leads, Accounts, Contacts, and Opportunities
-- Record-Triggered Flow
-- Task management and functional testing
-
-## Project Evidence
-
-Screenshots and a demonstration video will be added to this repository.
+## Further documentation
+- [Business requirements](./business-requirements.md)
+- [Solution design](./solution-design.md)
+- [Test scenarios](./test-scenarios.md)
 
 ## Disclaimer
-
-This is an independent portfolio project built by ACSKTech using fictional data in a Salesforce Developer Org. It is not a production client implementation and does not represent an endorsement by Salesforce or any customer.
+This is an independent ACSKTech portfolio demonstration using fictional records in a Salesforce Developer Org. It is not a production client implementation and does not represent endorsement by Salesforce or any customer.
